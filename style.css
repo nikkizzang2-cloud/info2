@@ -33,14 +33,12 @@ table, tr, td, th {
   border-bottom: 4px solid; tomato;
   
 
-  
-
-  border-collapse: collapse;
+ border-collapse: collapse;
   padding: 7px;
 }
 
 th {
-  font-weight: bold;
+  font-weight: normal;
 }
 
 li {
@@ -72,6 +70,12 @@ a:hover {
 
 
 @media screen and (max-width: 704px) {
+  table {
+    width: 90%;        /* 혹은 100% → 80% 이런 식으로 줄이기 */
+    margin: 0 auto;    /* 가운데 정렬 */
+    border-spacing: 4px;   /* 셀 사이 간격 줄이기 (테이블이면) */
+  }
+
 
 }
 
